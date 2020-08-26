@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+/*resetando as propriedades css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*estilizando o body */
+body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #9864CC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizados verticalmente*/
+    position: fixed; /*para manter a barra fixada na pagina inteira*/
+}
+.navesquerda{
+    display: flex;
+    align-items: center;
+    padding: 15px; /*margem interna*/
+}
+.logomarca{
+    width: 54px;
+    height: 54px;
+    margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+}
+.logotipo{
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+.navdireita{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.btn-login{
+    width: 136px;
+    height: 36px;
+    border: 1px solid white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-right: 15px;
+}
+.btn-login:hover{
+    background-color: white;
+    color: #9864CC;
+    transition: background 0.1s; /*deixa uma transição mais smooth*/
+}
+.cart{
+    width: 48px;
+    height: 48px;
+    margin-right: 30px;
+}
+
+/*componentes do header*/
+header{
+    width: 100%;
+    height: 768px;
+}
+.bgHeader {
+    width: 100%;
+    height: 100%; /*100% do "pai", o header*/
+    background-image: url("/img/headerBG.png");
+    background-size: cover; /*redimensiona junto com o site*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end; /*parte de baixo */
+    justify-content: space-between;
+}
+.headerEsquerda{
+    width: 400px;
+    margin-bottom: 75px;
+    margin: 0px 0px 75px 50px;
+
+}
+.headerDireita{
+    width: 380px;
+    height: 100px;
+    margin: 0px 30px 52px 0px;
+}
+.txtMaior{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 3px #7946ac;
+}
+.txtMenor{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 2px #7946ac;
+}
+.btn-header{
+    width: 360px;
+    height: 80px;
+    background-color: #9864CC;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-header:hover{
+    background-color: white;
+    color: #9864CC;
+    transition: background 0.1s;
+}
+/* estilizando os planos de hospedagem*/
+.planos{
+    width: 100%;
+    height: 768px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.planos Img{
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+}
+.start{
+    width: 346px;
+    height: 366px;
+    min-width: 285.67px;
+    border: 1px solid #E63950;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /*por padrão é ROW, portanto preciso especificar a coluna*/
+}
+.planoRotulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 12px 0 12px;
+}
+.planoTxt{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center; 
+}
+.btnStart{
+    width: 100%;
+    height: 67px;
+    background-color: #E63950;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+.select{
+    width: 346px;
+    height: 366px;
+    min-width: 285.67px;
+    border: 1px solid #FF9900;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnSelect{
+    width: 100%;
+    height: 67px;
+    background-color: #FF9900;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+.premium{
+    width: 346px;
+    height: 366px;
+    min-width: 285.67px;
+    border: 1px solid #428DFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnPremium{
+    width: 100%;
+    height: 67px;
+    background-color: #428DFF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+ /*buscador de dominios*/
+
+ .buscaDominio{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/buscaDominioBG.png"); /*imagem de fundo*/
+    background-size: cover; /*redimensiona junto com o site*/
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; /*deixa alinhados em colunas*/
+ }
+ .buscaTitulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #9864CC;
+ }
+ .buscaForm{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .inputBusca{
+    width: 66%; /*em relação ao item pai*/
+    height: 64px;
+    border: none;
+    border-radius: 3px;
+ }
+ .inputBusca:focus{ /*quando selecionado*/
+    outline: thin dotted; 
+    outline: 0px auto -webkit-focus-ring-color;  /*isso tudo é pra remover as linhas do contorno quando clica no input */
+    outline-offset: 0px;
+}
+.inputBusca::placeholder{
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font: 19px;
+    color: rgb(165, 165, 165);
+}
+ .btnBusca{
+     width: 28%;
+     height: 64px;
+    background-color: #9864CC;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+
+ }
+ .btnBusca:hover{
+     background-color:white;
+     color: #9864CC;
+     transition: background 0.1s;
+ }
+ .btnBusca:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+/*Estilo da garantia*/
+
+.garantia{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.garantia img{
+    width: 636px;
+    height: 468px;
+    margin-top: 10px;
+}
+.garantiaTitulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0px 0 0 0;
+}
+.garantiaTexto{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+.garantiaContratar{
+    width: 250px;
+    height: 60px;
+    background-color:#9864CC;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin: 30px 0 0 50px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*rodape*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #9864CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLogotipo{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+.footerLogomarca{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoMC{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoV{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoP{
+    width: 64px;
+    height: 64px;
+}
+.chevronUP{
+    width: 64px;
+    height: 64px;
+}
+.copyrights{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.esquerdaEsquerda{
+    display: flex;
+    align-items: center;
+}
+.tituloMeio{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}

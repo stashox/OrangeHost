@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Host</title>
+    <link rel="stylesheet" tpye="text/css" href="css/estilo.css"/>
+</head>
+<body id="topo">
+    <nav>  <!--divido em navesquerda e direita para facilitar no css-->
+        <div class="navesquerda">
+            <img src="img/orange_logo.png" class="logomarca" alt="logomarca"/>
+            <p class="logotipo">Orange Host</p>    
+        </div>
+        <div class="navdireita">
+            <ul>
+                <li> <a href="#planos">Planos</a></li>
+                <li> <a href="#dominio">Domínios</a></li>
+                <li> <a href="#garantia">Garantia</a></li>
+            </ul>
+            <a href="#" class="btn-login">Login</a>
+            <img src="img/cart.png" alt="carrinho de compras" title="carrinho de compras" class="cart">
+            
+        </div>
+    </nav>
+    <header id="planos">
+        <div class="bgHeader">
+            <div class="headerEsquerda2">
+                <div class="headerEsquerda">
+                <p class="txtMaior">Hospedagem de Sites</p>
+                <p class="txtMenor">Velocidade e Segurança</p>
+                </div>
+            </div>
+            <div class="headerDireita">
+                <a href="#prods" class="btn-header">Conheça os Planos</a> <!--O # serve pra quando o user clicar, a page atualiza-->
+            </div>
+        </div> 
+    </header>
+
+    <!-- Informação dos planos -->
+    <div class="planos" id="prods">
+        <div class="start">
+            <img src="img/start.png" alt="plano start" class="planoimg"/>
+            <p class="planoRotulo">Start</p>
+            <p class="planoTxt">Perfeito para sites<br>pequenos e médios.</p>
+            <a href="#" class="btnStart">Apenas R$2,29/mês</a>
+        </div>
+        <div class="select">
+            <img src="img/select.png" alt="plano select" class="planoimg"/>
+            <p class="planoRotulo">Select</p>
+            <p class="planoTxt">Para projetos de grande escala<br>e alto tráfego de dados.</p>
+            <a href="#" class="btnSelect">Apenas R$19,59/mês</a>
+        </div>
+        <div class="premium">
+            <img src="img/premium.png" alt="plano premium" class="planoimg"/>
+            <p class="planoRotulo">Premium</p>
+            <p class="planoTxt">Recursos dedicados para<br>escalar suas aplicações.</p>
+            <a href="#" class="btnPremium">Apenas R$14,99/mês</a>
+        </div>
+    </div>
+
+    <!-- Encontre seu dominio -->
+    <div class="buscaDominio" id="dominio">
+        <p class="buscaTitulo">Encontre o domínio perfeito, é grátis!</p>
+        <form method="GET" class="buscaForm">
+            <input type="text" placeholder="Digite o domínio desejado. Exemplo: www.suaideia.com.br" class="inputBusca" required/>
+            <button type="submit" class="btnBusca">Pesquisar domínio</button>
+        </form>
+    </div>
+
+    <!-- Garantia -->
+    <div class="garantia" id="garantia">
+        <div class="garantiaesquerda">
+            <p class="garantiaTitulo">Teste por 30 dias ou<br>tenha seu dinheiro de<br>volta</p>
+            <p class="garantiaTexto">Se você não estiver 100% satisfeito com a<br>Orange Host, a gente devolve o seu dinheiro.<br>Sem burocracias, sem riscos.<br> <a href="#" class="garantiaTxtSaibaMais">Saiba mais</a>
+            </p>
+            <a href="#" class="garantiaContratar">Contratar</a>
+            
+        </div>
+        <div class="garantiadireita">
+            <img src="img/land.svg" alt="mulher ao notebook" class="garantiaImg" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footerEsquerda">
+                <div class="esquerdaEsquerda">
+                <img src="img/orange_logo.png" alt="logo orangehost" class="footerLogomarca">
+                <p class="footerLogotipo">Orange Host</p>    
+                </div>
+                <p class="copyrights">Nenhum direito reservado - &copy; 2020</p>
+            </div>
+            
+            <div class="footerMeio">
+                <p class="tituloMeio">Como pagar?</p>
+                <div class="logos">
+                 <img src="img/mastercard.png" class="meioPgtoMC" alt="aceitamos mastercard"/>
+                <img src="img/visa.png" class="meioPgtoV" alt="aceitamos visa"/> 
+                <img src="img/paypal.png" class="meioPgtoP" alt="aceitamos paypal"/>   
+                </div>
+                
+            </div>
+            <div class="footerDireita">
+                <a href="#topo">
+                <img src="img/up-thin-chevron.png" alt="Ir ao topo da página" class="chevronUP">    
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
